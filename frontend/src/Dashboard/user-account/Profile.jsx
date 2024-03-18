@@ -44,7 +44,7 @@ useEffect(()=> {
     setLoading(true);
 
     try{
-      const res = await fetch(`${BASE_URL}/users/${user_id}`,{
+      const res = await fetch(`${BASE_URL}/users/${user._id}`,{
         method:"put",
         headers:{
           "Content-Type": "application/json",
